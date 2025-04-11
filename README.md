@@ -1,1 +1,1 @@
-# supabase-auth-app
+# Supabase Auth in Next JS

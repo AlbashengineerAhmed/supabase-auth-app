@@ -1,0 +1,99 @@
+.btn-spark .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height:55px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-spark .btn span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 4, 64, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 700px;
+  font-size:20px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.btn-spark .btn:hover span {
+	letter-spacing: 3px;
+}
+.btn-spark .btn span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.btn-spark .btn:hover span::before {
+	transform: skewX(45deg) translate(200px);
+}
+.btn-spark .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #8484ff;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.btn-spark .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.btn-spark .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #8484ff;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.btn-spark .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.btn-spark .btn:nth-child(1)::before, /*chnage 1*/
+.btn-spark .btn:nth-child(1)::after {
+	background: #000440;
+	box-shadow: 0 0 5px #0505ca, 0 0 15px #0505ca, 0 0 30px #0505ca,
+		0 0 60px #0505ca;
+}
