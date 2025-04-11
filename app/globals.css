@@ -19,7 +19,9 @@
     }
   }
 }
-
+.bg-background{
+  background-color: rgb(1, 3, 33) !important;
+}
 @layer base {
   * {
     @apply border-foreground/20;
