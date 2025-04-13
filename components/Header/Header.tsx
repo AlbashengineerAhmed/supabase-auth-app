@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Header() {
   return (
     <div className={classes.header}>
-      <h1 className='font-bold'><Link href="/">My Auth App</Link></h1>
+      <h1 className='font-bold text-white'><Link href="/">My Auth App</Link></h1>
       <User />
     </div>
   );
