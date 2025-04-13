@@ -10,7 +10,7 @@ export default function Signup({
       <Header />
 
       <div className="w-full px-8 sm:max-w-lg mx-auto mt-32">
-        <p className="text-foreground">{searchParams.message}</p>
+        <p className="text-white">{searchParams.message}</p>
       </div>
     </div>
   );

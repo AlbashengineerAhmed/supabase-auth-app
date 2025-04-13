@@ -73,7 +73,7 @@ export default async function ResetPassword({
             New Password
           </label>
           <input
-            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            className="rounded-md px-4 py-2 bg-inherit border border-white text-white mb-6"
             type="password"
             name="password"
             placeholder="••••••••"
@@ -83,18 +83,18 @@ export default async function ResetPassword({
             Confirm New Password
           </label>
           <input
-            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            className="rounded-md px-4 py-2 bg-inherit border border-white text-white mb-6"
             type="password"
             name="confirmPassword"
             placeholder="••••••••"
             required
           />
-          <button className="bg-indigo-700 rounded-md px-4 py-2 text-foreground mb-2">
+          <button className="bg-indigo-700 rounded-md px-4 py-2  text-white mb-2">
             Reset
           </button>
 
           {searchParams?.message && (
-            <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
+            <p className="mt-4 p-4 bg-foreground/10  text-center text-white">
               {searchParams.message}
             </p>
           )}

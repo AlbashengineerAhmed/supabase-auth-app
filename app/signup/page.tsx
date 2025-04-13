@@ -69,7 +69,7 @@ export default async function Signup({
             Email
           </label>
           <input
-            className="rounded-md px-4 py-2 border mb-6"
+            className="rounded-md px-4 py-2 border border-white text-white mb-6"
             name="email"
             placeholder="you@example.com"
             required
@@ -78,7 +78,7 @@ export default async function Signup({
             Password
           </label>
           <input
-            className="rounded-md px-4 py-2 border mb-6"
+            className="rounded-md px-4 py-2 border border-white text-white mb-6"
             type="password"
             name="password"
             placeholder="••••••••"
@@ -88,7 +88,7 @@ export default async function Signup({
             Confirm Password
           </label>
           <input
-            className="rounded-md px-4 py-2 border mb-6"
+            className="rounded-md px-4 py-2 border border-white text-white mb-6"
             type="password"
             name="confirmPassword"
             placeholder="••••••••"
@@ -105,7 +105,7 @@ export default async function Signup({
           </button>
 
           {searchParams?.message && (
-            <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
+            <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center text-white">
               {searchParams.message}
             </p>
           )}
@@ -113,7 +113,7 @@ export default async function Signup({
 
         <Link
           href="/login"
-          className="rounded-md no-underline text-foreground text-sm"
+          className="rounded-md no-underline text-white text-sm"
         >
           Already have an account? Sign In
         </Link>

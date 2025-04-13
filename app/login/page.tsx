@@ -57,7 +57,7 @@ export default async function Login({
             Email
           </label>
           <input
-            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            className="rounded-md px-4 py-2 bg-inherit border border-white text-white mb-6"
             name="email"
             placeholder="you@example.com"
             required
@@ -66,18 +66,19 @@ export default async function Login({
             Password
           </label>
           <input
-            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            className="rounded-md px-4 py-2 bg-inherit border border-white text-white mb-6"
             type="password"
             name="password"
             placeholder="••••••••"
             required
           />
           <button className="btn-signin-page">
-            <span>Sign In</span><i></i>
+            <span>Sign In</span>
+            <i></i>
           </button>
 
           {searchParams?.message && (
-            <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
+            <p className="mt-4 p-4 bg-foreground/10 text-white text-center">
               {searchParams.message}
             </p>
           )}
@@ -95,7 +96,7 @@ export default async function Login({
 
         <Link
           href="/signup"
-          className="rounded-md no-underline text-foreground text-sm"
+          className="rounded-md no-underline text-white text-sm"
         >
           Don't have an Account? Sign Up
         </Link>

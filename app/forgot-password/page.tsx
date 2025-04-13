@@ -59,18 +59,20 @@ export default async function ForgotPassword({
             Enter Email Address
           </label>
           <input
-            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            className="rounded-md px-4 py-2 bg-inherit border border-white text-white mb-6"
             name="email"
             placeholder="you@example.com"
             required
           />
 
           <button className="glowing-btn">
-            <span className='glowing-txt'>C<span className='faulty-letter'>ON</span>FIRM</span>
+            <span className="glowing-txt">
+              C<span className="faulty-letter">ON</span>FIRM
+            </span>
           </button>
 
           {searchParams?.message && (
-            <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
+            <p className="mt-4 p-4 bg-foreground/10 text-white text-center">
               {searchParams.message}
             </p>
           )}
@@ -78,7 +80,7 @@ export default async function ForgotPassword({
 
         <Link
           href="/login"
-          className="rounded-md no-underline text-foreground text-sm"
+          className="rounded-md no-underline text-white text-sm"
         >
           Remember your password? Sign in
         </Link>
