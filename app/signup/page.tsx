@@ -69,7 +69,7 @@ export default async function Signup({
             Email
           </label>
           <input
-            className="rounded-md px-4 py-2 border border-white text-white mb-6"
+            className="rounded-md px-4 py-2  bg-inherit border border-white text-white mb-6"
             name="email"
             placeholder="you@example.com"
             required
@@ -78,7 +78,7 @@ export default async function Signup({
             Password
           </label>
           <input
-            className="rounded-md px-4 py-2 border border-white text-white mb-6"
+            className="rounded-md px-4 py-2  bg-inherit border border-white text-white mb-6"
             type="password"
             name="password"
             placeholder="••••••••"
@@ -88,7 +88,7 @@ export default async function Signup({
             Confirm Password
           </label>
           <input
-            className="rounded-md px-4 py-2 border border-white text-white mb-6"
+            className="rounded-md px-4 py-2  bg-inherit border border-white text-white mb-6"
             type="password"
             name="confirmPassword"
             placeholder="••••••••"
